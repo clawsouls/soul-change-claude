@@ -1,0 +1,48 @@
+{
+  "manifest_version": "0.2",
+  "name": "soul-change",
+  "version": "1.0.0",
+  "description": "Give your AI a soul. Browse 80+ AI personas and apply them to Claude with one click. Powered by Soul Spec & ClawSouls.",
+  "author": {
+    "name": "ClawSouls",
+    "url": "https://clawsouls.ai"
+  },
+  "tools": [
+    {
+      "name": "search_souls",
+      "description": "Search for AI personas by keyword, category, or tag"
+    },
+    {
+      "name": "get_soul",
+      "description": "Get detailed information about a specific persona"
+    },
+    {
+      "name": "apply_persona",
+      "description": "Apply a persona to change Claude's behavior"
+    },
+    {
+      "name": "preview_soul",
+      "description": "Preview a persona's files before applying"
+    },
+    {
+      "name": "install_soul",
+      "description": "Install a persona package to local directory"
+    },
+    {
+      "name": "list_categories",
+      "description": "List all available persona categories"
+    }
+  ],
+  "server": {
+    "type": "node",
+    "entry_point": "server/dist/index.js",
+    "mcp_config": {
+      "command": "node",
+      "args": [
+        "${__dirname}/server/dist/index.js"
+      ],
+      "env": {}
+    }
+  },
+  "license": "MIT"
+}

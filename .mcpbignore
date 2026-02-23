@@ -1,0 +1,7 @@
+server/index.ts
+server/tsconfig.json
+server/node_modules/typescript/
+server/node_modules/@types/
+.git/
+.gitignore
+*.mcpb
